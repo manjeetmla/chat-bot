@@ -1,7 +1,7 @@
-from langchain.vectorstores import FAISS
-from langchain.llms import GooglePalm
+from langchain_community.vectorstores import FAISS
+from langchain_community.llms import GooglePalm
+from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 from langchain.document_loaders.csv_loader import CSVLoader
-from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import os
@@ -66,3 +66,4 @@ if __name__ == "__main__":
     create_vector_db()
     chain = get_qa_chain()
     print(chain("hello?"))
+
