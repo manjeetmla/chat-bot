@@ -6,4 +6,4 @@ protobuf~=3.19.0
 
 sentence-transformer== 2.2.2
 langchain-community
-faiss-cpu
+faiss-cpu==1.7.4
